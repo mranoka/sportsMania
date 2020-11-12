@@ -206,6 +206,12 @@ header {
 /* index.js responsiveness */
 
 @media (max-width: 800px) {
+    #cart-header {
+        display: none;
+    }
+    #main-cart-section {
+        margin-top: 20px;
+    }
     #about-header {
         display: none;
     }
@@ -278,7 +284,8 @@ header {
     	flex-direction: row; 
     	flex-wrap: wrap;
     	margin-top: 55px; 
-    	padding-left: 15%;	
+        padding-left: 15%;
+        padding-bottom: 20px;	
     }
     .sociales {
     	margin-left: 50px;
