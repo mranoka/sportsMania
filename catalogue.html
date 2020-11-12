@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--link to bring in external css-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>SportsMania</title>
+</head>
+
+<body>
+	<main class="container">
+		<header>
+			<nav>
+				<ul>
+					<li class="nav-list"><a href="index.html">Home</a></li>
+					<li class="nav-list"><a href="about.html">About us</a></li>
+					<li class="nav-list"><a href="index.html" id="media-drop-down">Social Media</a>
+                    <ul id="inner-social">
+                            <li id="fb" class="drop-social nav-list"><a class="nav-linx link" href="index.html">Facebook</a></li>
+                            <li id="fb" class="drop-social nav-list"><a class="nav-linx link" href="index.html">Instagram</a></li>
+                            <li id="fb" class="drop-social nav-list"><a class="nav-linx link" href="index.html">Twitter</a></li>
+                            <li id="fb" class="drop-social nav-list"><a class="nav-linx link" href="index.html">Pinterest</a></li>
+
+                        </ul></li>
+					<li class="nav-list"><a href="#contact-detail-email">Contact us</a></li>
+					<li class="nav-list"><a href="#newsletter">Newsletter</a></li>
+                    <li class="nav-list"><a class="nav-linx" href="cart.html"><i class="fa fa-cart-arrow-down" aria-hidden="true" id="cart-icon"></i></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h1 id="title">Welcome to SportsMania</h1>
+		<!--table for store catalogue-->
+        <table class="table table-hover" id="products-table">
+            <thead>
+                <tr>
+                    <th colspan="4">OUR PRODUCTS</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <img src="images2/Best-Golf-Clubs.png" class="img-fluid img-thumbnail rounded cat-image" alt="golf clubs">
+                    <h3>Elite<br>Golf clubs <br>R899 ea</h3>
+                    <button id="golf" class="btn btn-primary cat-page">Quick Add To Cart</button> <a href="descriptions/golfclubs.html"><button class="btn btn-info">Description</button></a> 
+                </td>
+                <td>
+                    <img src="images2/bike.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="biycle">
+                    <h3>Mountain Bikes <br>R16 999 ea</h3>
+                    <button id="mtb" class="btn btn-primary cat-page">Quick Add To Cart</button> <a href="descriptions/mtb.html"><button class="btn btn-info">Description</button></a>
+                </td>
+                <td>
+                    <img src="images2/bottle.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="bottle">
+                    <h3>Water Bottles <br>R99 ea</h3>
+                    <button id="bottle" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/waterbottle.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+                <td>
+                    <img src="images2/cycleshorts.jpg" class="img-fluid img-thumbnail rounded cat-image" alt="cycling shorts">
+                    <h3>Cycling Shorts <br>R599 ea</h3>
+                    <button id="shorts" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/cyclingshorts.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images2/dumbell.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="small dumbell">
+                    <h3>Dumbells <br>R259 ea</h3>
+                    <button id="dumbell" class="btn btn-primary cat-page">Quick Add To Cart</button> <a href="descriptions/dumbell.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+                <td>
+                    <img src="images2/firstaid.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="first aid box">
+                    <h3>Frist Aid Kits <br>R1 599 ea</h3>
+                    <button id="firstaid" class="btn btn-primary cat-page">Quick Add To Cart</button> <a href="descriptions/firstaid.html"> <button class="btn btn-info">Description</button></a>
+                </td>
+                <td>
+                    <img src="images2/runningshoe.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="running shoe">
+                    <h3>Running Shoes <br>R899 ea</h3>
+                    <button id="shoe" class="btn btn-primary cat-page">Quick Add To Cart</button> <a href="descriptions/rshoes.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+                <td>
+                    <img src="images2/soccerball.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="soccer ball">
+                    <h3>Soccer Balls <br>R359 ea</h3>
+                    <button id="ball" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/sball.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images2/soccerboot.jpeg" class="img-fluid img-thumbnail rounded cat-image" alt="soccer boot">
+                    <h3>Soccer Boots <br>R899 ea</h3>
+                    <button id="boot" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/sboots.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+                <td>
+                    <img src="images2/stopwatch.jpeg" class="img-fluid img-thumbnail rounded cat-image filters" alt="generic stopwatch">
+                    <h3>Digital Stopwatches <br>R290 ea</h3>
+                    <button id="watch" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/stopwatch.html"> <button class="btn btn-info">Description</button></a>
+                </td>
+                <td>
+                    <img src="images2/sunglass.jpeg" class="img-thumbnail img-fluid rounded cat-image filters" alt="sportsman sunglasses">
+                    <h3>Elite Eyewear <br>R299 ea</h3>
+                    <button id="eyewear" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/eyewear.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+                <td>
+                    <img src="images2/tennisracket.jpg" class="img-fluid img-thumbnail rounded cat-image" alt="tennis racket">
+                    <h3>Tennis Rackets <br>R789 ea</h3>
+                    <button id="racket" class="btn btn-primary cat-page">Quick Add To Cart</button><a href="descriptions/trackets.html"> <button class="btn btn-info">Description</button></a> 
+                </td>
+            </tr>
+        </table>
+        <h3 id="newsletter">Sign up for our Newsletter</h3>
+        <!--form to sign up to newsletter-->
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="email-entry">Email address</label>
+                <div class="col-sm-7">
+                    <input class="form-control" type="email" name="email" id="email-entry" placeholder="example@mail.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="pass">Password</label>
+                <div class="col-sm-7">
+                    <input class="form-control" type="password" name="password" id="pass" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <h6>Select Newsletter:</h6>
+                <div class="col-sm-2">
+                    <input type="radio" id="male" name="gender" value="week">
+                </div>
+                <label class="col-sm-4" for="male">Weekly</label>
+                <div class="col-sm-2">
+                    <input type="radio" id="female" name="gender" value="month">
+                </div>
+                <label for="female">Monthly</label>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="options">Select Preferences</label>
+                <div class="col-sm-7">
+                    <select id="options" class="form-control">
+                        <option>Accessories</option>
+                        <option>Luxury Equipment</option>
+                        <option>Second-Hand Products</option>
+                        <option>Deals</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary offset-md-3">Submit</button>
+        </form>
+        <hr>
+        <footer id="contact-detail-email" style="margin-bottom: 10px;">
+        	<h5>Drop us an email:</h5>
+        	<button class="btn btn-success"><a style="color: white;" href="mailto:calithis@gmail.com">Email</a></button>
+        </footer>
+	</main>
+	<script src="events.js"></script>
+</body>
+
+</html>

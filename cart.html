@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--link to bring in external css-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Your Cart</title>
+</head>
+
+<body id="cart-body">
+    <main class="container">
+        <header class="row">
+            <nav class="col-md-6 offset-md-3">
+                <ul>
+                    <li class="nav-list"><a class="nav-lin" href="index.html">Home</a></li>
+                    <li class="nav-list"><a class="nav-lin" href="catalogue.html">Store</a></li>
+                    <li class="nav-list"><a class="nav-lin" href="about.html">About us</a></li>
+                    <li class="nav-list"><a class="nav-lin" href="#social-media">Social Media</a></li>
+                    <li class="nav-list"><a class="nav-lin" href="catalogue.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="row">
+            <article class="col-md-4">
+                <h3>SHIPPING ADDRESS</h3>
+                <form>
+                    <label for='province-input'>Province</label>
+                    <input class="form-control" type="text" name="province-entry" id="province-input">
+                    <label for="city-entry">City/Town</label>
+                    <input class="form-control" type="text" name="city-entry" id="city-entry">
+                    <label for="street-entry">Street Address</label>
+                    <input class="form-control" type="text" name="street-entry" id="street-entry">
+                </form>
+                <h3>Discount Coupon?</h3>
+                <form>
+                    <label for="disc-code">Enter Discount Code Here:</label>
+                    <input class="form-control" type="text" name="disc-entry" id="disc-entry" placeholder="your code is: deadmeat55">
+                </form>
+                <button id="disc-code" class="btn btn-primary">OK</button>
+            </article>
+            <article class="col-md-4">
+                <h3>SHIPPING METHODS</h3>
+                <form id="options-form">
+                    <div class="form-group">
+                        <label for="collect-option">Collection</label>
+                        <input class="form-check" type="radio" name="delivery-option" value="collection" id="collect-option">
+                    </div>
+                    <div class="form-group">
+                        <label>Delivery</label>
+                        <input class="form-check" type="radio" name="delivery-option" value="delivery" id="deliver-option">
+                    </div>
+                </form>
+                <hr>
+                <form id="collection-form">
+                    <h4>Collection</h4>
+                    <div class="form-group">
+                        <label for="province-entry2">Enter Province:</label>
+                        <input class="form-control" type="text" name="province-entry2" id="province-entry2">
+                    </div>
+                    <div class="form-group">
+                        <label for="city-entry2">Enter City:</label>
+                        <input class="form-control" type="text" name="city-entry2" id="city-entry2">
+                    </div>
+                </form>
+                <form id="delivery-form">
+                    <h4>Delivery Options</h4>
+                    <div class="form-group">
+                        <label for="snail-mail">Snail Mail</label>
+                        <input class="form-check" type="radio" name="delivery-option" id="snail-mail" value="snail">
+                    </div>
+                    <div class="form-group">
+                        <label for="fast-mail">Fast Mail</label>
+                        <input class="form-check" type="radio" name="delivery-option" id="fast-mail" value="fast">
+                    </div>
+                    <div class="form-group">
+                        <label for="courier">Courier</label>
+                        <input class="form-check" type="radio" name="delivery-option" id="courier" value="courier">
+                    </div>
+                </form>
+            </article>
+            <article class="col-md-4">
+                <h3>ORDER SUMMARY</h3>
+                <div id="order-sum"></div>
+                <hr>
+                <p id="tot-text">TOTAL: <span id="total-disp"></span></p>
+                <button id="order-button" class="btn btn-success">CONFIRM ORDER</button>
+            </article>
+        </section>
+    </main>
+    <script src="events.js"></script>
+</body>
+
+</html>
