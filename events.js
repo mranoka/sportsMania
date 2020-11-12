@@ -3,6 +3,7 @@ $(function() {
     let images_cache = [];
     let numElem = [];
     let menuSentinel = 0;
+    let socialSent = 0;
 
     const prodObj = {
         'golf': 899,
@@ -105,11 +106,16 @@ $(function() {
         cartElem.innerHTML = som;
 
     }
-    // displays drop down menu when social media header is hovered over
-    $('#media-drop-down, #inner-social').hover(() => {
-        $('.drop-social').slideDown(100);
-    }, () => {
-        $('.drop-social').slideUp(100);
+    // displays drop down menu when social media header is clicked
+    $('.drop-social').hide();
+    $('#media-drop-down').on('click', () => {
+        if (socialSent === 0) {
+            socialSent = 1;
+            $('.drop-social').show();  
+        } else if (socialSent === 1) {
+             socialSent = 0;
+             $('.drop-social').hide();     
+        }
     })
 
     // alerts user that order was successful and generates reference number

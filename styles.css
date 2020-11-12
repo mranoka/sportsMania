@@ -46,7 +46,7 @@ td h3 {
 
 nav ul li a {
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 80px;
     font-weight: 900;
     font-family: serif;
     font-size: 20px;
@@ -54,6 +54,14 @@ nav ul li a {
 
 .nav-list {
     list-style-type: none;
+}
+.nav-list a {
+    color: black;
+    font-weight: 900;
+    font-family: monospace, sans-serif;
+}
+.btn {
+    margin-top: 10px;
 }
 
 a:hover {
@@ -88,6 +96,17 @@ header {
 
 .nav-linx {
     color: white;
+    font-weight: 900;
+}
+.nav-linx11 {
+    background-color: rgba(164, 164, 193, 0.4);
+    font-size: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#soc-med {
+    margin-left: 30px;
 }
 
 #about-body {
@@ -187,6 +206,12 @@ header {
 /* index.js responsiveness */
 
 @media (max-width: 800px) {
+    #about-header {
+        display: none;
+    }
+    #cat-header {
+        display: none;
+    }
     #home-header {
         display: none;
     }
@@ -235,6 +260,7 @@ header {
 
     #home-header2 {
         width: 100%;
+        margin-top: 10px;
     }
 
     #cart-icon {
@@ -258,6 +284,13 @@ header {
     	margin-left: 50px;
     }
 
+    #products-table {
+        display: block;
+    }
+    #products-table td {
+        display:inline-block;
+    }
+
 }
 
 
@@ -274,5 +307,8 @@ header {
     }
      #social-media2 {
      	display: none;
+     }
+     .fab {
+         color: hsl(240, 19%, 35%);
      }
 }
